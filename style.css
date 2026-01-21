@@ -1,0 +1,153 @@
+:root{
+    --pink:#4396e8;
+
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(20612.png) no-repeat;
+    background-size:500% 100%;
+    background-position: center;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn :hover{
+    background: #1a4168;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+header .logo span{
+    color: var(--pink);
+}
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    color: #777;
+}
+
+header .navbar a:hover{
+    color: rgb(78, 140, 228) ;
+}
+
+header .icons a{
+    font-size: 2rem;
+    color: #333;
+    margin-left: 0.2rem;
+    color: #2a4561;
+    margin-right: 2rem;
+}
+
+header .navbar a:hover{
+    color: #2a4561;
+}
+
+header #toggler{
+      display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgb(0,0,0,.3);
+    display: none;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 50px;
+}
+
+#home .content{
+    max-width: 50rem;
+}
+#home .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+
+#home .content span{
+    font-size: 2rem ;
+    color: #1a4168;
+    padding: 1rem 0 ;
+    line-height: 1.5;
+}
+#home .content p{
+    font-size: 1.5rem ;
+    color: #777;
+    padding: 1rem 0 ;
+    line-height: 1.5;
+}
+
+#home .video {
+    display: flex;
+    gap: 10px;
+    
+}
+
+#home .video iframe {
+  border-radius: 8px;
+  width: 320px;
+  height: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#home .video iframe:hover {
+  transform: scale(1.05); /* sedikit membesar */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* biar lebih dramatis */
+}
+
+
+
+
